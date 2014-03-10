@@ -45,7 +45,7 @@
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         //NSLog(@"path %@, uti:%@", path, uti);
 
-        NSArray *parts = [path componentsSeparatedByString:@"="];
+        NSArray *parts = [path componentsSeparatedByString:@"/"];
         NSString *previewDocumentFileName = [parts lastObject];
         //NSLog(@"The file name is %@", previewDocumentFileName);
 
